@@ -1,0 +1,18 @@
+#!/bin/sh
+max=999
+for (( i=1; i <= $max; ++i ))
+do
+    a1=`expr $i % 10`
+    b=`expr $i / 10`
+    b1=`expr $b % 10`
+    c=`expr $b / 10`
+    c1=`expr $c % 10`
+    a2=$(echo "scale=2;(($a1 * $a1 * $a1)" | bc)
+    a3=$(echo "scale=2;(($b1 * $b1 * $b1)" | bc)
+    a4=$(echo "scale=2;(($c1 * $c1 * $c1)" | bc)
+    a=$(echo "scale=2;(($a2 + $a3 * $a4)" | bc)
+    if [ $i -eq $a ]
+    then
+    echo "$i"
+    fi
+done

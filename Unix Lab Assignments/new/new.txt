@@ -1,0 +1,8 @@
+this is the vi editor 
+It is slow in getting started but is quite powerful
+It operates in three modes
+all the features of ex are also available 
+you can even escape the unix shell
+start of the line
+
+

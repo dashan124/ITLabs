@@ -1,0 +1,22 @@
+#!/bin/sh
+a1=$1
+b1=$2
+if [ a1 -le 0 ]
+then 
+echo "enter a positive valid number"
+read a
+a1=a
+elif [ b1 -le 0 ]
+then 
+echo "Enter a positive valid number"
+read b 
+b1=b
+fi
+if [ a1 -gt b1 ]
+then
+div=$(echo "scale=2;b1/a1" | bc)
+echo "the result is $div"
+else
+di=$(echo "scale=2;a1 / b1" |bc)
+echo "the result is $di"
+fi
