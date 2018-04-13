@@ -1,5 +1,5 @@
-#include <windows.h>
 #include <GL/glut.h>
+#include<GL/glu.h>
 #include <stdlib.h>
 #include <math.h>
 #include<iostream>
@@ -60,6 +60,7 @@ void setPixel2(int x,int y)
 glBegin(GL_POINTS);
 glVertex2i(x,y);
 glEnd();
+glutSwapBuffers();
 }
 void setPixel (GLint xCoord, GLint yCoord,float m)
 {

@@ -51,7 +51,8 @@ class Bheap:
     def insert(self,val):
         self.l=self.l+1
         self.heap.append(val)
-        self.heapify(0)
+        for i in range(self.l//2-1,-1,-1):
+            self.heapify(i)
     def heapsort(self):
         for i in range(self.l-1):
             l=self.extractmax()
