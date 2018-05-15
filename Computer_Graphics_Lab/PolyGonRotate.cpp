@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<windows.h>
 #include<GL/glut.h>
 #include<bits/stdc++.h>
 #include <math.h>
@@ -22,13 +21,15 @@ glMatrixMode(GL_PROJECTION);
 glLoadIdentity();
 gluPerspective(45.0,(double)w/(double)h,1.0,200.0);
 }
-float angle=30.0f;
+float angle=1.0f;
 float camre=0.0f;
 void display(){
 glClear(GL_COLOR_BUFFER_BIT);
 
 //glLineWidth(2.5);
-glRotatef(angle,-1.5f,0.5f,-5.0f);
+glRotated(angle,0.0f,1.0f,0.0f);
+glTranslated(0.0011,0.0011,0);
+glScalef(1.01,1.01,0);
 glColor3f(0.3, 0.3, 0.3);
 glBegin(GL_TRIANGLES);
 glVertex3f(-0.3, -0.3, 0.0);
@@ -52,7 +53,6 @@ glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
 glutInitWindowSize(500, 500);
 glutInitWindowPosition(100, 100);
 glutCreateWindow("OpenGL Test");
-
 intiopenGL();
 glutDisplayFunc(display);
 glutIdleFunc(display);
