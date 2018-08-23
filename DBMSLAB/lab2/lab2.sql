@@ -61,15 +61,11 @@ desc PROJECT;
 desc DEPENDENT;
 desc DEPT_LOCATIONS;
 desc WORKS_ON;
-insert into EMPLOYEE values(
-	'John',
-	'B',
-	'Smith',
-	123456789,
-	'1965-01-09',
-	'731 Fondren,Houseton,TX',
-	'M',
-	30000,
-	333445555,
-	5	
-);
+insert into EMPLOYEE values('John','B','Smith',123456789,'1965-01-09','731 Fondren,Houseton,TX','M',30000,333445555,5);
+insert into EMPLOYEE values('Franklin','T','Wong',333445555,'1955-12-08','638 Voss,Houseton,TX','M',40000,888665555,5);
+insert into EMPLOYEE values('Alicia','J','Zelaya',999887777,'1965-01-09','731 Fondren,Houseton,TX','M',30000,333445555,4);
+insert into EMPLOYEE values('Jennifer','S','Wallace',987654321,'1965-01-09','731 Fondren,Houseton,TX','M',30000,333445555,4);
+insert into EMPLOYEE values('Ramesh','K','Narayan',666884444,'1965-01-09','731 Fondren,Houseton,TX','M',30000,333445555,5);
+insert into EMPLOYEE values('Joyce','A','English',453453453,'1965-01-09','731 Fondren,Houseton,TX','M',30000,333445555,5);
+insert into EMPLOYEE values('Ahmed','V','Jabber',987987987,'1965-01-09','731 Fondren,Houseton,TX','M',30000,333445555,4);
+insert into EMPLOYEE values('James','E','Brog',888665555,'1965-01-09','731 Fondren,Houseton,TX','M',30000,333445555,1);
