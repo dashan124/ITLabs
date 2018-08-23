@@ -1,0 +1,25 @@
+.Compact{
+	width: 150px;
+	border: 1.5px solid blue;
+	background-color: green;
+}
+.mid{
+	width: 150px;
+	border: 1.5px solid cyan;
+	background-color: cyan;
+}
+.Sports{
+	width: 150px;
+	border: 1.5px solid orange;
+	background-color: orange;
+}
+.titlee{
+	font-family: sans-serif;
+	color: blue;
+}
+.titlee1{
+	font-family: sans-serif;
+	color: green;
+}
+
+

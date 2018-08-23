@@ -1,0 +1,22 @@
+.btn {
+    background: orange;
+}
+
+.field {
+    margin: 10px;
+    background: #ffdeb5;
+    border: 1px solid purple;
+}
+
+fieldset {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid purple;
+}
+
+legend {
+    background: orange;
+    border: 1px solid purple;
+    color: white;
+    padding: 1px;
+}

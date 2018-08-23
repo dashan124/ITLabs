@@ -1,0 +1,20 @@
+body {
+    font-family: sans-serif;
+    background: #111111;
+    color: #eee;
+}
+
+.headline-image {
+    margin: 1em;
+    height: 50vh;
+    align-self: center;
+}
+
+.side-paragraph {
+    display: flex;
+}
+
+
+img, p, h1 {
+    margin: 1em;
+}
