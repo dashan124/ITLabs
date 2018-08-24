@@ -25,3 +25,7 @@ select COUNT(EMPLOYEE.Fname) from EMPLOYEE,DEPARTMENT where EMPLOYEE.Dno=DEPARTM
 
 select COUNT(EMPLOYEE.Fname) from EMPLOYEE
 inner join DEPARTMENT on EMPLOYEE.Dno=DEPARTMENT.Dnumber and DEPARTMENT.Dname='Adminstration';
+
+-- 4 group by
+
+select  Pname,Pnumber,COUNT(Essn) as employees_no from WORKS_ON,PROJECT where PROJECT.Pnumber=WORKS_ON.Pno group by Pno,Pname;
