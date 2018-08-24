@@ -120,3 +120,13 @@ insert into DEPENDENT values(987654321,'Abner','M','1942-02-28','Spouse');
 insert into DEPENDENT values(123456789,'Michael','M','1988-01-04','Son');
 insert into DEPENDENT values(123456789,'Alice','F','1988-12-30','Daughter');
 insert into DEPENDENT values(123456789,'Elizabeth','F','1967-05-05','Spouse');
+
+
+
+
+select * from EMPLOYEE;
+select * from DEPARTMENT;
+select * from DEPT_LOCATIONS;
+select * from PROJECT;
+select * from WORKS_ON;
+select * from DEPENDENT;
