@@ -29,3 +29,10 @@ inner join DEPARTMENT on EMPLOYEE.Dno=DEPARTMENT.Dnumber and DEPARTMENT.Dname='A
 -- 4 group by
 
 select  Pname,Pnumber,COUNT(Essn) as employees_no from WORKS_ON,PROJECT where PROJECT.Pnumber=WORKS_ON.Pno group by Pno,Pname;
+
+
+-- 5 For each project, retrieve the project number, the project name,
+-- project location and the number of employees from department 5
+-- who work on the project.
+
+select Pname,Pnumber,Plocation,COUNT(Dnumber) as employees_no from DEPARTMENT,PROJECT where PROJECT.Dnumber=5 group by Pno,Pname;
