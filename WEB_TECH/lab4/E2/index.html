@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Intro TO NITK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+    <style>
+    .myslides{ display: none;}
+    </style>
+</head>
+<body>
+    <h2 class ="meri">NITK INTRO</h2>
+    <div class="sab kuch">
+        <img class="mySlides" src="img/i1.jpeg" style="width:30%">
+        <img class="mySlides" src="img/i2.jpeg" style="width:30%">
+        <img class="mySlides" src="img/i3.jpeg" style="width:30%">
+        <img class="mySlides" src="img/i4.jpeg" style="width:30%">
+        <img class="mySlides" src="img/i5.jpeg" style="width:30%">
+
+        <button class ="b1" onclick="plusDivs(-1)">&#10094;</button>
+        <button class ="b2" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+    var showIndex=1;
+    showDivs(showIndex);
+    function plusDivs(n){
+        showDivs(showIndex+=n);
+    }
+    function showDivs(n){
+        var i;
+        var x=document.getElementsByClassName("mySlides");
+        if(n>x.length){
+            showIndex=1;
+        }
+        if(n<1){
+            showIndex=x.length-1;
+        }
+        for(i=0;i<x,length;i++){
+            x[i].style.display = "none";
+        }
+        x[showIndex-1].style.display = "block";  
+    }
+    </script>
+</body>
+</html>

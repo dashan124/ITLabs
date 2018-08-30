@@ -1,0 +1,51 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Feedback Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+    <div>
+        Name : <br>
+        <input type="text" name="nam" id="Name"><br>
+        City : <br>
+        <input type="text" name="cit" id="city"><br>
+        Gender : <br>
+        <!-- <input type="text" name="Gende" id="gender"> -->
+        <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        <br>
+        Comments :
+        <br>
+        <textarea type ="text" id="txtbox" placeholder="add your feedback"></textarea>
+        <br>
+        <br>
+        <button type ="button" id="btn" onclick="showText()"> Submit </button>
+        <br>
+        
+    </div>
+    <p name="text_show" id="yha_se"></p>
+</body>
+<script>
+    function showText(){
+
+        var text_pa=document.getElementById("yha_se");
+        // text_pa.innerHTML="some ";
+        var text_name=document.getElementById("Name").value;
+        var city_name=document.getElementById("city").value;
+        var gender_=document.getElementById("gender").value;
+        var Comments_text=document.getElementById("txtbox").value;
+        // alert(gender_);
+        text_pa.innerHTML="<strong>your response is </strong><br>"
+        +"<strong>name : </strong>"+text_name+"<br>"+
+        "<strong>City: </strong>"+city_name+" <br>"+
+        "<strong>Gender :</strong>"+gender_+"<br>"+
+        "<strong>Comments :</strong>"+Comments_text;
+    }
+</script>
+</html>
