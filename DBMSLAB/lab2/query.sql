@@ -36,3 +36,10 @@ select  Pname,Pnumber,COUNT(Essn) as employees_no from WORKS_ON,PROJECT where PR
 -- who work on the project.
 
 select Pname,Pnumber,Plocation,COUNT(Dnumber) as employees_no from DEPARTMENT,PROJECT where PROJECT.Dnumber=5 group by Pno,Pname;
+
+
+-- 6 For every project located in ‘Houston’, list the project number, the
+-- controlling department number, and the department manager’s last
+-- name, address.
+
+
