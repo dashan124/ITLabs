@@ -63,7 +63,13 @@ create table if not exists ROOM (
   unavailable boolean NOT NULL,
   FOREIGN KEY(blockfloor,blockcode) REFERENCES BLOCK(blockfloor,blockcode)
 );
-
+desc PHYSICIAN;
+desc DEPARTMENT;
+desc PATIENT;
+desc NURSE;
+desc APPOINTMENT;
+desc BLOCK;
+desc ROOM;
 
 INSERT INTO NURSE values(101,'Carla Espinosa','Head Nurse',true,111111110);
 INSERT INTO NURSE values(102,'Laverne Roberts','Nurse',true,222222220);
@@ -83,20 +89,16 @@ INSERT INTO DEPARTMENT values(1,'General Medicine',4);
 INSERT INTO DEPARTMENT values(2,'Surgery',7);
 INSERT INTO DEPARTMENT values(3,'Psychiatry',9);
 
-insert into APPOINTMENT values (13216584,100000001,101,1,'2008-04-24 10:00:00','2008-04-24 11:00:00','A');
-insert into APPOINTMENT values (59871321,100000004,,4,'2008-04-26 10:00:00','2008-04-26 11:00:00','C');
-insert into APPOINTMENT values (69879231,100000003,103,2,'2008-04-26 11:00:00','2008-04-26 12:00:00','C');
-insert into APPOINTMENT values (76983231,100000001,,3,'2008-04-26 12:00:00','2008-04-26 13:00:00','C');
-
-
-insert into ROOM values(101,'Single',1,1,false);
-insert into ROOM values(102,'Single',2,1,false);
-insert into ROOM values(212,'Single',3,2,false);
-
 insert into PATIENT values(100000001,'John Smith','42 Foobar Lane','555-0256',68476213,1);
 insert into PATIENT values(100000002,'Grace Ritchie','37 Snafu Drive','555-0512',36546321,2);
 insert into PATIENT values(100000003,'Random J. Patient','101 Omgbbq Street','555-1204',65465421,2);
 insert into PATIENT values(100000004,'Dennis Doe','1100 Foobaz Avenue','555-2048',68421879,3);
+
+
+insert into APPOINTMENT values (13216584,100000001,101,1,'2008-04-24 10:00:00','2008-04-24 11:00:00','A');
+insert into APPOINTMENT values (59871321,100000004,NULL,4,'2008-04-26 10:00:00','2008-04-26 11:00:00','C');
+insert into APPOINTMENT values (69879231,100000003,103,2,'2008-04-26 11:00:00','2008-04-26 12:00:00','C');
+insert into APPOINTMENT values (76983231,100000001,NULL,3,'2008-04-26 12:00:00','2008-04-26 13:00:00','C');
 
 INSERT INTO BLOCK values(1,1);
 INSERT INTO BLOCK values(1,2);
@@ -104,3 +106,15 @@ INSERT INTO BLOCK values(2,1);
 INSERT INTO BLOCK values(2,2);
 INSERT INTO BLOCK values(3,1);
 INSERT INTO BLOCK values(3,2);
+
+insert into ROOM values(101,'Single',1,1,false);
+insert into ROOM values(102,'Single',2,1,false);
+insert into ROOM values(212,'Single',3,2,false);
+
+select * from PHYSICIAN;
+select * from DEPARTMENT;
+select * from PATIENT;
+select * from NURSE;
+select * from APPOINTMENT;
+select * from BLOCK;
+select * from ROOM;
