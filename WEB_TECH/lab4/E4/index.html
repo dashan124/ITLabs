@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Lab 3 | Question 4</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="mn">
+		<form id="form1">
+			<div class="hd">
+				<label>Items</label>
+				<label>Price /kg</label>
+				<label>Quantity (in kgs)</label>
+			</div>
+
+			<div id="row1">
+				<label>Item1</label>
+				<label>100</label>
+				<input type="number" name="q1" id="qnt1">
+			</div>
+
+			<div class="row2">
+				<label>Item2</label>
+				<label>40</label>
+				<input type="number" name="q2" id="qnt2">
+			</div>
+
+			<div class="row3">
+				<label>Item3</label>
+				<label>25</label>
+				<input type="number" name="q3" id="qnt3">
+			</div>
+		</form>
+		<div class="bill">
+			<button onclick="calc()" id="btn">Click for total amount</button>
+			<input type="text" name="totl" id="total">
+		</div>
+		<br>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+
+</html>

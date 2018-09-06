@@ -15,17 +15,20 @@
         <input type="text" name="cit" id="city"><br>
         Gender : <br>
         <!-- <input type="text" name="Gende" id="gender"> -->
-        <select id="gender">
+        <select name="gend" id="gender">
             <option value="Male">Male</option>
             <option value="Female">Female</option>
         </select>
         <br>
         Comments :
         <br>
-        <textarea type ="text" id="txtbox" placeholder="add your feedback"></textarea>
+        <textarea type ="text" id="txtbox" name="kuch" placeholder="add your feedback"></textarea>
         <br>
         <br>
-        <button type ="button" id="btn" onclick="showText()"> Submit </button>
+        <button type ="button" id="btn" onclick="showText()"> SubmitByID </button>
+        <br>
+        <br>
+        <button type ="button" id="btn2" onclick="showText2()"> SubmitByName </button>
         <br>
         
     </div>
@@ -45,6 +48,19 @@
         +"<strong>name : </strong>"+text_name+"<br>"+
         "<strong>City: </strong>"+city_name+" <br>"+
         "<strong>Gender :</strong>"+gender_+"<br>"+
+        "<strong>Comments :</strong>"+Comments_text;
+    }
+    function showText2(){
+        var text_pa=document.getElementsByName("text_show")[0];
+        var text_name=document.getElementsByName("nam")[0].value;
+        var city_name=document.getElementsByName("cit")[0].value;
+        var gender=document.getElementsByName("gend")[0].value;
+        var Comments_text=document.getElementsByName("kuch")[0].value;
+
+        text_pa.innerHTML="<strong>your response is </strong><br>"
+        +"<strong>name : </strong>"+text_name+"<br>"+
+        "<strong>City: </strong>"+city_name+" <br>"+
+        "<strong>Gender :</strong>"+gender+"<br>"+
         "<strong>Comments :</strong>"+Comments_text;
     }
 </script>
