@@ -66,7 +66,7 @@ create table if not exists ROOM (
 
 create table if not exists PROCEDURES(
     code int(10) PRIMARY KEY,
-    name_pro varchar(20),
+    name_pro varchar(50),
     cost int(10)
 );
 
@@ -84,7 +84,7 @@ create table if not exists UNDERGOES(
     patient int(10),
     procedures int(10),
     -- stay int(10),
-    date date,
+    date datetime,
     physician int(10),
     assistingnurse int(10),
     FOREIGN KEY(patient) REFERENCES PATIENT(ssn),
@@ -150,6 +150,16 @@ insert into PROCEDURES values(3,'Folded Demiophtalmectomy',4500);
 insert into PROCEDURES values(4,'Complete Walletectomy',10000);
 insert into PROCEDURES values(5,'Obfuscated Dermogastrotomy',4899);
 
+insert into UNDERGOES values(100000001,1,'2008-05-02 00:00:00',3,101);
+insert into UNDERGOES values(100000001,3,'2008-05-10 00:00:00',7,101);
+insert into UNDERGOES values(100000004,4,'2008-05-13 00:00:00',3,103);
+
+insert into TRAINED_IN values(3,1,'2008-01-01','2008-12-31');
+insert into TRAINED_IN values(3,2,'2008-01-01','2008-12-31');
+insert into TRAINED_IN values(6,2,'2008-01-01','2008-12-31');
+insert into TRAINED_IN values(6,5,'2007-01-01','2007-12-31');
+insert into TRAINED_IN values(7,1,'2008-01-01','2008-12-31');
+
 
 select * from PHYSICIAN;
 select * from DEPARTMENT;
@@ -161,3 +171,5 @@ select * from ROOM;
 select * from PROCEDURES;
 select * from TRAINED_IN;
 select * from UNDERGOES;
+select * from UNDERGOES;
+select * from TRAINED_IN;
