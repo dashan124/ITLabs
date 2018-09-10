@@ -22,7 +22,7 @@ int main(){
 		printf("Thread %d sum is  = %f\n",tid,sum);
 		if(x>5000){
 		float y=x*(0.02);
-		sum-=(y*(0.02));
+		sum-=(y);
 		}
 	}
 	printf("Sum is %f\n",sum);
