@@ -20,7 +20,7 @@ int main(){
 	#pragma omp parallel
 	#pragma omp for  
 	for(int i=0;i<n;i++){
-		sum_of_rows[i]=0;
+		ssum_of_rows[i]=0;
 	}
 	for(int i=0;i<n;i++){
 		#pragma omp parallel for
