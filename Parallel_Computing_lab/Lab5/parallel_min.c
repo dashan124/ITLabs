@@ -3,7 +3,7 @@
 #include <omp.h>
 #include <sys/time.h>
 #define ll long long int  
-#define chunk 5
+#define chunk 10000
 int main(){
 	struct timeval TimeValue_Start;
 	struct timezone TimeZone_Start;
@@ -12,6 +12,7 @@ int main(){
 	long time_start,time_end;
 	double time_overhead;
 	ll n;
+	omp_set_num_threads(10);
 	 scanf("%lld",&n);
 	ll arr[n];
 	ll i,min;
@@ -23,7 +24,7 @@ int main(){
 	printf("\n");
 	gettimeofday(&TimeValue_Start,&TimeZone_Start);
 	min=arr[0];
-	#pragma omp parallel for reduction(min:min) schedule(static)
+	#pragma omp parallel for reduction(min:min) schedule(guided,chunk)
 	for(i=1;i<n;i+=1){
 		// if(arr[i]<min){
 		// 	min=arr[i];
