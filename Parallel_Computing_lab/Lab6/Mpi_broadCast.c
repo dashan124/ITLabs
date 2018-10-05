@@ -10,7 +10,7 @@ int main(int argc,char *argv[ ])
 	{
 		scanf("%d",&x);
 	}
-	MPI_Bcast(&x,1,MPI_INT,1,MPI_COMM_WORLD);
+	MPI_Bcast(&x,1,MPI_INT,0,MPI_COMM_WORLD);
 	printf("Value of x in process %d : %d\n",myrank,x);
 	MPI_Finalize();
 	return 0;
