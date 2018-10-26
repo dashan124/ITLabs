@@ -106,10 +106,10 @@ desc UNDERGOES;
 
 INSERT INTO NURSE values(101,'Carla Espinosa','Head Nurse',true,111111110);
 INSERT INTO NURSE values(102,'Laverne Roberts','Nurse',true,222222220);
-INSERT INTO NURSE values(103,'Paul Flowers','Head Nurse',false,333333330);
+INSERT INTO NURSE values(103,'Paul Flowers','Head Nurse',true,333333330);
 
-INSERT INTO PHYSICIAN values(1,'John Dorian','Staff Internist',111111111);
-INSERT INTO PHYSICIAN values(2,'Elliot Reid','Attending Physician',222222222);
+INSERT INTO PHYSICIAN values(1,'John Dorian','Staff Internist',111111110);
+INSERT INTO PHYSICIAN values(2,'Elliot Reid','Attending Physician',222222220);
 INSERT INTO PHYSICIAN values(3,'Christopher Turk','Surgical Attending Physician',333333333);
 INSERT INTO PHYSICIAN values(4,'Percival Cox','Senior Attending Physician',444444444);
 INSERT INTO PHYSICIAN values(5,'Bob Kelso','Head Chief of Medicine',555555555);
@@ -129,9 +129,9 @@ insert into PATIENT values(100000004,'Dennis Doe','1100 Foobaz Avenue','555-2048
 
 
 insert into APPOINTMENT values (13216584,100000001,101,1,'2008-04-24 10:00:00','2008-04-24 11:00:00','A');
-insert into APPOINTMENT values (59871321,100000004,NULL,4,'2008-04-26 10:00:00','2008-04-26 11:00:00','C');
+insert into APPOINTMENT values (59871321,100000004,102,4,'2008-04-26 10:00:00','2008-04-26 11:00:00','C');
 insert into APPOINTMENT values (69879231,100000003,103,2,'2008-04-26 11:00:00','2008-04-26 12:00:00','C');
-insert into APPOINTMENT values (76983231,100000001,NULL,3,'2008-04-26 12:00:00','2008-04-26 13:00:00','C');
+insert into APPOINTMENT values (76983231,100000001,104,3,'2008-04-26 12:00:00','2008-04-26 13:00:00','C');
 
 INSERT INTO BLOCK values(1,1);
 INSERT INTO BLOCK values(1,2);
